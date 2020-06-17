@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.container {
+    margin: 40px 0;
+}
+
+.header {
+    height: 100px;
+    margin-top: 30px;
+}
+
+.heading {
+    float: left;
+}
+
+.heading h2 {
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.search-box {
+    float: right;
+    margin-top: 30px;
+    background: linear-gradient( #a7bf37, #edf2d7);
+    height: 40px;
+    padding: 20px 20px 50px 20px;
+    width: 400px;
+}
+
+.search-box #text {
+    margin-right: 40px;
+    padding: 5px;
+    border: 1px solid #bf37a7;
+    color: gray;
+    font-size: 15px;
+    background: white url(../images/logo.png) right center no-repeat;
+}
+
+.search-box .sub {
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #bf37a7;
+}
+
+.menus {
+    margin-top: 40px;
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 10px;
+}
+
+.menus ul li {
+    list-style: none;
+    display: inline;
+    border-right: 1px solid #bf37a7;
+}
+
+.menus ul li:last-child {
+    border: none;
+}
+
+.menus ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    padding: 15px;
+    line-height: 30px;
+    transition: font-size 1s ease-in-out;
+}
+
+.menus ul li a:hover,
+.menus ul li a.active {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.content h2 {
+    text-transform: capitalize;
+    font-weight: normal;
+    color: rgb(51, 95, 1);
+    font-size: 35px;
+}
+
+.content p {
+    color: rgb(123, 136, 119);
+    font-size: 19px;
+}
+
+.goto {
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 480px;
+    height: 500px;
+}
+
+.goto h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: indigo;
+}
+
+.goto ul {
+    padding-top: 8px;
+}
+
+.goto ul li {
+    list-style-type: none;
+}
+
+.goto ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    transition: font-size .7s ease;
+}
+
+.goto ul li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: indigo;
+}
+
+.goto-left {
+    float: left;
+}
+
+.goto-left ul li {
+    list-style-image: url(../images/arrows.png);
+    padding: 4px 0 4px 10px;
+}
+
+.links {
+    margin: 20px 0px;
+}
+
+.whyus {
+    float: right;
+}
+
+.whyus ul li {
+    background: url(../images/correct.png) left center no-repeat;
+    padding: 15px 0px 15px 70px;
+}
+
+.footer {
+    margin-top: 20px;
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 30px;
+}
