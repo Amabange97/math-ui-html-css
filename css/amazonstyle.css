@@ -17,6 +17,11 @@ form {
     flex-wrap: wrap;
 }
 
+.submit {
+    margin-top: 100%;
+    width: 100%;
+}
+
 .details {
     flex: 3;
 }
