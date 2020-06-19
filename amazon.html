@@ -13,13 +13,15 @@
         <div class="container">
             <div class="details">
                 <div class="address">
-                    <label for="">Address :</label><input type="text" name="address" placeholder="address">
-                </div>
-                <div class="postcode">
-                    <label for="">Postcode :</label><input type="text" name="postcode" placeholder="Postcode">
-                </div>
-                <div class="City">
-                    <label for="">City : :</label><input type="text" name="city" placeholder="city">
+                    <div class="form-group">
+                        <label for="">Address :</label><input type="text" name="address" placeholder="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Postcode :</label><input type="text" name="postcode" placeholder="Postcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="">City : :</label><input type="text" name="city" placeholder="city">
+                    </div>
                 </div>
                 <div class="shipping">
                     <label for="">Choose your shipping method :</label>
@@ -30,11 +32,23 @@
                     </select>
                 </div>
                 <div class="payment">
-                    <div></div>
-                    <label for="">City : :</label><input type="text" name="city" placeholder="city">
+                    <div>Choose your payment method :</div>
+                    <label for="">Paypal <input type="radio" name="city" ></label>
+                    <label for="">Debit card <input type="radio" name="city" ></label>
+                    <label for="">Credit card <input type="radio" name="city" ></label>
+                </div>
+                <div class="checks">
+                    <label for="">securely save my payment details <input type="checkbox" name="checks1" id=""></label>
+                    <label for="">sign me up for email updates <input type="checkbox" name="checks2" id=""></label>
                 </div>
             </div>
-            <div class="comments"></div>
+            <div class="comments">
+                <div>Comments</div>
+                <textarea name="" id="" cols="40" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="button" value="submit">
         </div>
     </form>
 </body>

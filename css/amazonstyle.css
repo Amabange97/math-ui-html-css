@@ -3,12 +3,32 @@
 }
 
 form {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100vh;
+    font-size: 24px;
 }
 
 .container {
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.details
+.details {
+    flex: 3;
+}
+
+.comments {
+    flex: 1;
+}
+
+.address label {
+    flex: 1;
+}
+
+.address input {
+    flex: 3;
+}
