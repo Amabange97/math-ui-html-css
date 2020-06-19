@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 10px;
+}
+
+.details
