@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    margin: 40px 0;
+}
+
+.header {
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading {
+    flex: 50%;
+    min-width: 400px;
+}
+
+.search-box {
+    margin-top: 30px;
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 20px;
+    min-width: 400px;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h2 {
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.search-box #text {
+    padding: 5px;
+    border: 1px solid #bf37a7;
+    color: gray;
+    font-size: 15px;
+    background: white url(../assets/images/logo.png) right center no-repeat;
+}
+
+.search-box .sub {
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #bf37a7;
+}
+
+.menus {
+    margin-top: 20px;
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 20px;
+}
+
+.menus a {
+    list-style: none;
+    display: inline;
+    border-right: 1px solid #bf37a7;
+}
+
+.menus a:last-child {
+    border: none;
+}
+
+.menus a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    padding: 15px;
+    line-height: 30px;
+    transition: font-size 1s ease-in-out;
+}
+
+.menus a:hover,
+.menus a.active {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.content h2 {
+    text-transform: capitalize;
+    font-weight: normal;
+    color: rgb(51, 95, 1);
+    font-size: 35px;
+}
+
+.content p {
+    color: rgb(123, 136, 119);
+    font-size: 19px;
+}
+
+.goto {
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 480px;
+    height: 500px;
+}
+
+.goto h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: indigo;
+}
+
+.goto ul {
+    padding-top: 8px;
+}
+
+.goto ul li {
+    list-style-type: none;
+}
+
+.goto ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    transition: font-size .7s ease;
+}
+
+.goto ul li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: indigo;
+}
+
+.goto-left {
+    float: left;
+}
+
+.goto-left ul li {
+    list-style-image: url(../images/arrows.png);
+    padding: 4px 0 4px 10px;
+}
+
+.links {
+    margin: 20px 0px;
+}
+
+.whyus {
+    float: right;
+}
+
+.whyus ul li {
+    background: url(../images/correct.png) left center no-repeat;
+    padding: 15px 0px 15px 70px;
+}
+
+.footer {
+    margin-top: 20px;
+    background: linear-gradient( #a7bf37, #edf2d7);
+    padding: 30px;
+}
