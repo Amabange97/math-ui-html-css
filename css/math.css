@@ -53,10 +53,10 @@ html{
     /* margin: 5px; */
 }
 .mr{
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .ml{
-    margin-left:5px;
+    margin-left:10px;
 }
 .start-game{
 display: flex;
@@ -65,5 +65,12 @@ justify-content: center;
 
 .start-game button{
     border-radius: 5px;
-    border-color: none;
+    border: none;
+    box-shadow: 0 3px rgb(121, 121, 121);
+    padding: 10px;
+}
+.start-game button:focus,.start-game button:hover{
+        border: none;
+        transition: ease-in-out 3s;
+
 }
