@@ -3,12 +3,14 @@
 }
 
 body {
-    margin: 0 auto;
     padding: 0;
 }
 
 .container {
     margin: 40px 0;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -28,6 +30,7 @@ body {
     background: linear-gradient( #a7bf37, #edf2d7);
     padding: 20px;
     min-width: 400px;
+    display: flex;
     flex: 50%;
     justify-content: center;
     align-items: center;
