@@ -116,16 +116,20 @@ html{
 #start-game{
 display: flex;
 justify-content: center;
+align-items: center;
+margin-left: 200px;
+cursor: pointer;
 }
 
-#start-game button{
+#start-game {
     border-radius: 5px;
+    width: 100px;
     border: none;
      background-color: rgba(255, 255, 255,0.5);
     box-shadow: 0 3px rgb(121, 121, 121);
     padding: 10px;
 }
-#start-game button:focus,.start-game button:hover{
+#start-game:focus,#start-game:hover{
         border: none;
         /* transition: (border-radius=5px) ease-in-out 3s; */
         transition: ease-in-out 0.5s;
@@ -137,7 +141,7 @@ justify-content: center;
 #timeremaining{
     width: 160px;
     padding: 10px;
-    left: 700px;
+    left: 720px;
     top: 465px;
     position: absolute;
     text-align: center;
