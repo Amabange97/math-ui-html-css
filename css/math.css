@@ -13,9 +13,34 @@ html{
     border-radius: 20px;
     box-shadow: 0px 4px 10px 0px rgb(48, 48, 48);
 }
+.head-area{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.try-again{
+     background-color: rgb(202, 113, 113);
+    color: white;
+   margin-left: 220px;
+    padding: 5px;
+    display: none;
+    box-shadow: 0px 4px 10px 0px rgb(48, 48, 48);
+    text-align: center;
+}
+.correct{
+    background-color: green;
+    color: white;
+   margin-left: 220px;
+   display: none;
+    padding: 5px;
+    box-shadow: 0px 4px 10px 0px rgb(48, 48, 48);
+    text-align: center;
+}
 .score{
-    float: right;
+    /* float: right; */
+    text-align: center;
     background-color: burlywood;
+   margin-left: auto;
     padding: 5px;
     box-shadow: 0 3px rgb(121, 121, 121);
 
@@ -36,6 +61,12 @@ html{
     height: 50px;
     background-color: violet;
     box-shadow: 0 3px rgb(121, 121, 121);
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
     margin: 0 auto;
 }
 .answer-card{
@@ -43,15 +74,28 @@ html{
     height: 100px;
      margin: 10px auto;
      display: flex;
+     flex-direction: row;
+     justify-content: space-between;
      
 }
 .card{
     width: 100px;
     height: 90px;
     border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     box-shadow: 0 3px rgb(121, 121, 121);
     /* margin: 5px; */
+}
+.card:hover,.card:active{
+     background-color: rgb(247, 0, 255);
+    box-shadow: 0 3px rgb(82, 82, 82);
+    color: #fff;
 }
 .mr{
     margin-right: 10px;
