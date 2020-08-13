@@ -141,6 +141,26 @@ justify-content: center;
     top: 468px;
     position: absolute;
     text-align: center;
- 
+ border-radius: 3px;
+     box-shadow: 0 3px rgb(82, 82, 82);
+     -o-box-shadow: 0 3px rgb(82, 82, 82);
+     -moz-box-shadow: 0 3px rgb(82, 82, 82);
+     -webkit-box-shadow: 0 3px rgb(82, 82, 82);
  background-color: rgba(247, 0, 255,0.4);
+ display: none;
+}
+#game-over{
+    padding: 60px;
+    width: 400px;
+    background: linear-gradient(#FFA800,#FF4D00);
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: absolute;
+    top:230px;
+    left: 380px;
+    z-index: 1000;
+    display: none;
 }
