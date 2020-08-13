@@ -154,8 +154,8 @@ cursor: pointer;
  display: none;
 }
 #game-over{
-    padding: 60px;
-    width: 400px;
+    padding: 30px;
+    width: 300px;
     background: linear-gradient(#FFA800,#FF4D00);
     text-transform: uppercase;
     text-align: center;
@@ -163,8 +163,8 @@ cursor: pointer;
     font-size: 2.5em;
     font-weight: bold;
     position: absolute;
-    top:230px;
-    left: 380px;
+    top:150px;
+    left: 460px;
     z-index: 1000;
     display: none;
 }
