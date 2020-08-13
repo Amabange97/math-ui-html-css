@@ -135,10 +135,10 @@ justify-content: center;
 }
 
 #timeremaining{
-    width: 180px;
+    width: 160px;
     padding: 10px;
     left: 700px;
-    top: 468px;
+    top: 465px;
     position: absolute;
     text-align: center;
  border-radius: 3px;
