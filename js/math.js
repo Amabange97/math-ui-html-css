@@ -14,11 +14,13 @@ document.getElementById("start-game").onclick = function startNow(){
     else{ //if we are not playing
         playing = true;
         score = 0;
-        document.getElementById("timeremaining").style.display="block";
+        show("timeremaining");
         timeValue=3;
         document.getElementById("timevalue").innerHTML=timeValue;
         document.getElementById("scoreValue").innerHTML=score;
         document.getElementById("start-game").innerHTML="Reset Game";
+        show("score");
+        hide("game-over");
 
 
         //startCounter
@@ -35,13 +37,24 @@ function startCounter() {
         document.getElementById("timevalue").innerHTML = timeValue;
         if (timeValue == 0) {
             stopCount();
-            document.getElementById("game-over").style.display="block";
+            show("game-over");
             document.getElementById("game-over").innerHTML="<p>Game Over</p> <p>Your Score is "+ score +"</p>";
-            document.getElementById("timeremaining").style.display="none";
+            hide("timeremaining");
+            hide("score");
+            hide("correct");
+            hide("tryAgain");
+            playing=false;
+            document.getElementById("start-game").innerHTML="Start Game";
         }
 
     }, 1000);
     function stopCount() {
         clearInterval(action);
     }
+}
+function show(id){
+    document.getElementById(id).style.display="block";
+}
+function hide(id){
+    document.getElementById(id).style.display="none";
 }
