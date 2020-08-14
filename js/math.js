@@ -16,7 +16,7 @@ document.getElementById("start-game").onclick = function startNow(){
         playing = true;
         score = 0;
         show("timeremaining");
-        timeValue=3;
+        timeValue=60;
         document.getElementById("timevalue").innerHTML=timeValue;
         document.getElementById("scoreValue").innerHTML=score;
         document.getElementById("start-game").innerHTML="Reset Game";
@@ -32,6 +32,32 @@ document.getElementById("start-game").onclick = function startNow(){
 
     }
 }
+for(i=1;i<5;i++){
+    document.getElementById("box"+i).onclick = function () {
+        if (playing == true) {
+            if (this.innerHTML == correctAnswer) {
+                score++;
+                document.getElementById("scoreValue").innerHTML = score;
+                show("correct");
+                hide("tryAgain");
+
+                setTimeout(function () {
+                    hide("correct");
+                }, 1000);
+                startQuestion();
+
+            }
+            else {
+                show("tryAgain");
+                hide("correct");
+                setTimeout(function () { hide("tryAgain"); }, 1000);
+                startQuestion();
+            }
+        }
+    }
+}
+
+
 function startCounter() {
     action = setInterval(function () {
         timeValue -= 1;
@@ -69,15 +95,15 @@ function startQuestion(){
    
     document.getElementById("box" + correctPosition).innerHTML=correctAnswer;
 
-    
+    var answers=[correctAnswer];
     for (i=1; i<5; i++){
-        if(correctPosition != i){
+        if (i != correctPosition){
             var wrongAnswer;
             do {
                 wrongAnswer = (1 + Math.round(9 * Math.random())) * (1 + Math.round(9 * Math.random()));
-                document.getElementById("box" + i).innerHTML = wrongAnswer;
-
-            } while (correctAnswer==wrongAnswer);
+            } while (answers.indexOf(wrongAnswer)>-1);
+            document.getElementById("box" + i).innerHTML = wrongAnswer;
+            answers.push(wrongAnswer);
            
 
         }
