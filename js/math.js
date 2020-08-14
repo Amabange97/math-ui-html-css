@@ -3,6 +3,7 @@ var playing = false;
 var score;
 var action;
 var timeValue;
+var correctAnswer
 document.getElementById("start-game").onclick = function startNow(){
    
 
@@ -25,7 +26,7 @@ document.getElementById("start-game").onclick = function startNow(){
 
         //startCounter
         startCounter();
-
+        startQuestion();
 
        
 
@@ -57,4 +58,28 @@ function show(id){
 }
 function hide(id){
     document.getElementById(id).style.display="none";
+}
+function startQuestion(){
+    
+    var x = 1+ Math.round(9 * Math.random());
+    var y = 1+ Math.round(9 * Math.random());
+    correctAnswer =  x*y;
+    document.getElementById("question").innerHTML=x +"x"+ y;
+    var correctPosition = 1 + Math.round(3 * Math.random());
+   
+    document.getElementById("box" + correctPosition).innerHTML=correctAnswer;
+
+    
+    for (i=1; i<5; i++){
+        if(correctPosition != i){
+            var wrongAnswer;
+            do {
+                wrongAnswer = (1 + Math.round(9 * Math.random())) * (1 + Math.round(9 * Math.random()));
+                document.getElementById("box" + i).innerHTML = wrongAnswer;
+
+            } while (correctAnswer==wrongAnswer);
+           
+
+        }
+    }
 }

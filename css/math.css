@@ -49,7 +49,7 @@ html{
 .clearfix{
     clear: both;
 }
-.question-are{
+#question{
     background-color: deepskyblue;
     width: 400px;
     height: 150px;
@@ -58,6 +58,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 42px;
+    font-weight: 900;
 
 }
 .click-answer{
