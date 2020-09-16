@@ -5,7 +5,7 @@ html{
 }
  
 .container{
-    height: 550px;
+    height: 600px;
     width: 1000px;
     background-color: aqua;
     margin: 10px auto;
@@ -21,7 +21,8 @@ html{
 #tryAgain{
      background-color: rgb(202, 113, 113);
     color: white;
-   margin: auto;
+    width: 100px;
+   /* margin: auto; */
     padding: 5px;
     display: none;
     box-shadow: 0px 4px 10px 0px rgb(48, 48, 48);
@@ -40,7 +41,7 @@ html{
     /* float: right; */
     text-align: center;
     background-color: burlywood;
-   /* margin-left: auto; */
+   margin-left: auto;
 
    display: block;
     padding: 5px;
@@ -151,8 +152,8 @@ cursor: pointer;
 #timeremaining{
     width: 160px;
     padding: 10px;
-    left: 720px;
-    top: 465px;
+    left: 950px;
+    top: 485px;
     position: absolute;
     text-align: center;
  border-radius: 3px;
@@ -165,7 +166,7 @@ cursor: pointer;
 }
 #game-over{
     padding: 30px;
-    width: 300px;
+    width: 500px;
     background: linear-gradient(#FFA800,#FF4D00);
     text-transform: uppercase;
     text-align: center;
@@ -173,8 +174,8 @@ cursor: pointer;
     font-size: 2.5em;
     font-weight: bold;
     position: absolute;
-    top:110px;
-    left: 460px;
+    top:140px;
+    left: 430px;
     z-index: 1000;
     display: none;
 }
