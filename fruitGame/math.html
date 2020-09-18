@@ -1,44 +1,47 @@
+<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>math game</title>
-    <link rel="stylesheet" href="css/math.css">
-</head>
-<body>
-    <div class="container">
-        <div class="head-area">
-            <div id="tryAgain" id="correct">
-                <!-- Try again -->
-            </div>
-            <div id="correct">XXX</div>
-            <div id="score">
-                Score : <span id="scoreValue">0</span>
-            </div>
-        </div>
-        
-        <div class="clearfix"></div>
-        <div id="question">
-           
-        </div>
 
-        <div>
-            <div class="click-answer">
-                Catch fruits
-            </div>
-            
-            <div id="start-game">Start Game</div>
+<head>
+    <title>Fruits Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+    <div id="container">
+        <div id="score">
+            Score: <span id="scorevalue">0</span>
         </div>
-        <div id="timeremaining">Time remaining : <span id="timevalue">60</span> sec</div>
-    
-        <div id="game-over">
-        sdfsd
+        <div id="trialsLeft">
+
+        </div>
+        <div id="correct">
+            Correct
+        </div>
+        <div id="wrong">
+            Try again
+        </div>
+        <div id="fruitsContainer">
+            <img id="fruit1" class="fruit">
+        </div>
+        <div id="instruction">
+            Catch Fruits
+        </div>
+        <div id="startreset">
+            Start Game
+        </div>
+        <div id="gameOver">
+
         </div>
     </div>
-    <script src="js/fruit.js"></script>
-    <script src="<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-"></script>
     
+   
+
+    <script src="js/jquery.js"></script>
 </body>
+
 </html>
