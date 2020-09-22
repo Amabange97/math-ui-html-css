@@ -19,9 +19,7 @@ $("#startreset").click(
             $("#startreset").html("Reset Game");
             startAction();
         }
-    }
-);
-
+      
 function addHeart(){
     $("#trialsLeft").empty();
     for (i = 0; i < trialsLeft; i++) {
@@ -63,6 +61,18 @@ function startAction(){
 
         },10
     );
+    $("#fruit1").mouseover(function () {
+        score++;
+        $("#scoreValue").html(score);
+        document.getElementById("sliceSound").play();
+        // $("#sliceSound")[0].play();
+       clearInterval(action);
+
+       $("#fruit1").hide("explode",500);
+        setTimeout(startAction,500);
+        
+
+    });
 }
 function chooseFruit(){
     $("#fruit1").attr('src', 'images/' + fruits[Math.round(8 * Math.random())] + '.png');
@@ -72,3 +82,5 @@ function stopAction(){
     clearInterval(action);
     $("#fruit1").hide();
 }
+    }
+);

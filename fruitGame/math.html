@@ -7,14 +7,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <link rel="stylesheet" href="css/styling.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
 </head>
 
 <body>
     <div id="container">
         <div id="score">
-            Score: <span id="scorevalue">0</span>
+            Score: <span id="scoreValue">0</span>
         </div>
         <div id="trialsLeft">
 
@@ -37,10 +36,19 @@
         <div id="gameOver">
 
         </div>
+        
+        <audio id="sliceSound">
+<source src="audio/slicefruit.mp3">
+</source>
+<source src="audio/slicefruit.ogg">
+</source>
+
+        </audio>
     </div>
     
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/jquery.js"></script>
 </body>
 
