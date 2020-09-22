@@ -81,3 +81,6 @@ margin: 0 auto; border-radius: 3px; cursor: pointer;     box-shadow: 0px 4px rgb
  .fruit{     display: none; 
     position: absolute; 
 } 
+.likeIcon{
+    margin: 0 5px;
+}
