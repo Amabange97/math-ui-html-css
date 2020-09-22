@@ -13,6 +13,9 @@ $("#startreset").click(
             $("#scorevalue").html(score);
             trialsLeft=3;
            addHeart();
+
+            $("#startreset").html("Reset Game");
+            startAction();
         }
     }
 );
@@ -22,4 +25,7 @@ function addHeart(){
         $("#trialsLeft").append('<img src="images/like.png" class="likeIcon">');
     }
 
+}
+function startAction(){
+    $("#fruit1").show();
 }
