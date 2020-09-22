@@ -19,7 +19,7 @@ $("#startreset").click(
 
 function addHeart(){
     for (i = 0; i < trialsLeft; i++) {
-        $("#trialsLeft").append(" X ");
+        $("#trialsLeft").append('<img src="images/like.png">');
     }
 
 }
