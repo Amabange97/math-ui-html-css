@@ -1,6 +1,7 @@
 var playing =false;
 var score;
 var trialsLeft;
+var fruits=['apple','banana','cherries','grapes','mango','orange','peach','pear','watermelon'];
 $("#startreset").click(
     function(){
         if(playing==true){
@@ -28,4 +29,10 @@ function addHeart(){
 }
 function startAction(){
     $("#fruit1").show();
+    chooseFruit();
+    $("#fruit1").css({ 'left': Math.round(550 * Math.random()), 'top': -50 });
+}
+function chooseFruit(){
+    $("#fruit1").attr('src', 'images/' + fruits[Math.round(8 * Math.random())] + '.png');
+    
 }
