@@ -39,6 +39,22 @@ function startAction(){
     action= setInterval(
         function (){
             $("#fruit1").css('top', $("#fruit1").position().top + step);
+            if ($("#fruit1").position().top > $('#fruit1').height()){
+                if(trialsLeft >1){
+                    $("#fruit1").show();
+                    chooseFruit();
+                    $("#fruit1").css({ 'left': Math.round(550 * Math.random()), 'top': -50 });
+                    //define step
+                    step = 1 + Math.round(5 * Math.random());
+
+                    trialsLeft --;
+                    addHeart();
+                }
+                else{
+                    
+                }
+            }
+
         },10
     );
 }
