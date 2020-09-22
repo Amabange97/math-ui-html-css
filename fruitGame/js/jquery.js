@@ -15,7 +15,7 @@ $("#startreset").click(
             $("#scorevalue").html(score);
             trialsLeft=3;
            addHeart();
-
+            $("#gameOver").hide();
             $("#startreset").html("Reset Game");
             startAction();
         }
@@ -23,6 +23,7 @@ $("#startreset").click(
 );
 
 function addHeart(){
+    $("#trialsLeft").empty();
     for (i = 0; i < trialsLeft; i++) {
         $("#trialsLeft").append('<img src="images/like.png" class="likeIcon">');
     }
@@ -51,7 +52,12 @@ function startAction(){
                     addHeart();
                 }
                 else{
-                    
+                    playing =false;
+                    $("#startreset").html("Start Game");
+                    $("#gameOver").show();
+                    $("#gameOver").html('<p>Game Over!</p><p>Your Score is ' + score+'</p>');
+                    stopAction();
+                    $("#trialsLeft").hide();
                 }
             }
 
@@ -61,4 +67,8 @@ function startAction(){
 function chooseFruit(){
     $("#fruit1").attr('src', 'images/' + fruits[Math.round(8 * Math.random())] + '.png');
     
+}
+function stopAction(){
+    clearInterval(action);
+    $("#fruit1").hide();
 }
